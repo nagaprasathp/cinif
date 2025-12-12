@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Naga Prasath | VFX Artist & Animator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles for smooth scrolling and general typography */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Dark background for the whole page */
+        }
+        /* Custom animation for section visibility */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <nav id="navbar" class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 shadow-lg border-b border-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="font-extrabold text-xl text-blue-500">Naga Prasath</a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" id="nav-home" class="nav-link transition-colors duration-200 uppercase text-sm tracking-wider text-blue-400 font-bold border-b-2 border-blue-400">Home</a>
+                    <a href="#about" id="nav-about" class="nav-link transition-colors duration-200 uppercase text-sm tracking-wider text-gray-300 hover:text-blue-400">About</a>
+                    <a href="#skills" id="nav-skills" class="nav-link transition-colors duration-200 uppercase text-sm tracking-wider text-gray-300 hover:text-blue-400">Skills</a>
+                    <a href="#projects" id="nav-projects" class="nav-link transition-colors duration-200 uppercase text-sm tracking-wider text-gray-300 hover:text-blue-400">Projects</a>
+                    <a href="#contact" id="nav-contact" class="nav-link transition-colors duration-200 uppercase text-sm tracking-wider text-gray-300 hover:text-blue-400">Contact</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-100 hover:text-blue-400">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden hidden bg-gray-800 border-t border-gray-700">
+                <a href="#home" class="mobile-nav-link block w-full text-left px-4 py-3 transition-colors text-blue-400 bg-gray-700 font-medium">Home</a>
+                <a href="#about" class="mobile-nav-link block w-full text-left px-4 py-3 transition-colors text-gray-300 hover:bg-gray-700">About</a>
+                <a href="#skills" class="mobile-nav-link block w-full text-left px-4 py-3 transition-colors text-gray-300 hover:bg-gray-700">Skills</a>
+                <a href="#projects" class="mobile-nav-link block w-full text-left px-4 py-3 transition-colors text-gray-300 hover:bg-gray-700">Projects</a>
+                <a href="#contact" class="mobile-nav-link block w-full text-left px-4 py-3 transition-colors text-gray-300 hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen pt-16 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in delay-200" id="home-content">
+            <div class="w-full h-auto max-w-lg mx-auto mb-10 border-4 border-blue-500 rounded-xl overflow-hidden shadow-2xl">
+                <div class="aspect-video bg-gray-800 flex items-center justify-center">
+                    <svg class="w-16 h-16 text-blue-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18V6a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2z"></path></svg>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                P. Naga Prasath
+            </h1>
+            <p class="text-xl md:text-3xl text-blue-400 font-light mb-8 leading-relaxed">
+                VFX Artist & Animation Specialist
+            </p>
+            <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                Blending technical expertise with artistic vision to craft compelling visual stories.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-xl shadow-blue-900/50">
+                    View My Portfolio
+                </a>
+                <a href="#contact" class="border border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-gray-800 fade-in">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start bg-gray-900 p-8 rounded-xl shadow-2xl border border-gray-700">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-blue-400">P. Naga Prasath: The Creator</h3>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I am Nagaprasath, an aspiring VFX artist currently pursuing studies in VFX and Animation at Rathinam College of Arts and Science in Coimbatore.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Passionately blending technical expertise with artistic vision, I have hands-on experience in freelance video editing, 3D modeling, and working with the Unreal Engine. As a fresher, I am eager to learn, grow, and contribute to impactful projects in visual effects and animation.
+                    </p>
+                    <div class="flex flex-wrap items-center space-x-6 pt-4 text-gray-300">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.513 23.513 0 0112 15c-3.18 0-6.23-.97-8.73-2.745M3 6V4a2 2 0 012-2h14a2 2 0 012 2v2m-2 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6h14zm-4 0v1h-4V6"></path></svg>
+                        <span class="font-semibold text-sm md:text-base">Video/Photo Editor at N Studio (2024 - Present)</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-inner space-y-4">
+                    <h4 class="text-xl font-bold text-blue-400 mb-4">My Interests</h4>
+                    <p class="text-base text-gray-300 leading-relaxed">
+                        Beyond the screen, I enjoy capturing moments through photography and exploring new places while traveling.
+                    </p>
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <span class="px-4 py-1 bg-blue-600 text-white text-sm rounded-full flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.931a2 2 0 001.664-.897l.432-.648A2 2 0 019.53 4h4.94a2 2 0 011.664.897l.432.648A2 2 0 0018.069 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            Photography
+                        </span>
+                        <span class="px-4 py-1 bg-blue-600 text-white text-sm rounded-full flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.148 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.148-3-9s1.343-9 3-9m-9 9h6"></path></svg>
+                            Travelling
+                        </span>
+                        <span class="px-4 py-1 bg-blue-600 text-white text-sm rounded-full flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14a2 2 0 002 2h-12a2 2 0 00-2-2zm0 0v-4"></path></svg>
+                            Music
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-gray-900 fade-in">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Core Skills & Tools</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">
+                    The VFX and animation tools I use to bring ideas from concept to final render.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="skills-container">
+                </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-gray-800 fade-in">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Featured Projects (8 Slots)</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">
+                    A selection of high-impact work demonstrating my technical and creative skills across 3D.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="projects-grid">
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-gray-900 text-white fade-in">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">
+                    I'm currently seeking new opportunities and collaborations. Feel free to reach out directly.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-4 p-4 bg-gray-800 rounded-lg shadow-xl">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-400">Email</h3>
+                            <p class="text-gray-300">nagaprasath24@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 p-4 bg-gray-800 rounded-lg shadow-xl">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-400">Phone</h3>
+                            <p class="text-gray-300">+91 7904485067</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 p-4 bg-gray-800 rounded-lg shadow-xl">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.148 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.148-3-9s1.343-9 3-9m-9 9h6"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-400">Location</h3>
+                            <p class="text-gray-300">Coimbatore, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-6 pt-4 justify-center md:justify-start">
+                        <a href="https://nagaprasathp.github.io/CINI-FX/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-800 border border-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white rounded-full flex items-center justify-center transition-colors shadow-lg">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.73.084-.73 1.205.084 1.839 1.237 1.839 1.237 1.07 1.838 2.809 1.305 3.493.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.766.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.923.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.8 0C21.579 21.795 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-800 border border-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white rounded-full flex items-center justify-center transition-colors shadow-lg">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 5.5h-5v16h5v-16zm-2.5 4c1.379 0 2.5-1.121 2.5-2.5s-1.121-2.5-2.5-2.5-2.5 1.121-2.5 2.5 1.121 2.5 2.5 2.5zm0 2h-2.5v16h2.5v-16zM24 10.15c0-3.615-1.897-5.15-4.577-5.15-1.928 0-3.226 1.03-3.834 2.007v-1.607h-4.227c.057.653 0 16 0 16h4.227v-8.799c0-.472.036-.944.331-1.284.341-.365.807-.373 1.15-.373 1.054 0 1.246.793 1.246 1.777v8.68h4.227v-8.799c0-2.316-1.218-3.414-2.73-3.414-1.233 0-1.995.788-2.316 1.48v-1.274h-4.227z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form action="#" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
+                    <h4 class="text-2xl font-semibold text-blue-400">Send Me a Message</h4>
+                    <div>
+                        <input 
+                            type="text" 
+                            placeholder="Your Name"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-colors placeholder-gray-400 text-gray-100"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <input 
+                            type="email" 
+                            placeholder="Your Email"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-colors placeholder-gray-400 text-gray-100"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <textarea 
+                            rows="4"
+                            placeholder="Your Message"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-colors resize-none placeholder-gray-400 text-gray-100"
+                            required
+                        ></textarea>
+                    </div>
+                    <button 
+                        type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-bold transition-colors flex items-center justify-center space-x-3 text-white shadow-md shadow-blue-900/50"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-500 py-6 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> P. Naga Prasath. All rights reserved. | Built with modern web standards.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            const projectsGrid = document.getElementById('projects-grid');
+            
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // --- Mobile Menu Toggle ---
+            mobileMenuButton.addEventListener('click', () => {
+                const hidden = mobileMenu.classList.toggle('hidden');
+                // when hidden === false, mobile menu is visible
+                menuIcon.classList.toggle('hidden', !hidden);
+                closeIcon.classList.toggle('hidden', hidden);
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+
+
+            // --- Skill Data and Rendering (Only names, no percentages) ---
+            const skillsData = [
+                { name: 'Adobe After Effects', icon: 'M13 10V3L4 14h7v7l9-11h-7z', color: 'text-red-500', description: 'Advanced compositing, motion graphics, and visual effects.' }, 
+                { name: 'Adobe Premiere Pro', icon: 'M13 10V3L4 14h7v7l9-11h-7z', color: 'text-purple-500', description: 'Professional video editing, color correction, and audio synchronization.' }, 
+                { name: 'DaVinci Resolve', icon: 'M12 21a9 9 0 100-18 9 9 0 000 18zm0-16.5A7.5 7.5 0 0119.5 12c0 2.21-1.006 4.195-2.586 5.464L12 10.707 6.086 16.621A7.5 7.5 0 014.5 12c0-4.142 3.358-7.5 7.5-7.5z', color: 'text-white', description: 'Industry-standard color grading, professional video editing, and motion graphics.' }, 
+                { name: 'Autodesk Maya', icon: 'M10 6H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2H14z', color: 'text-orange-500', description: 'High-level 3D modeling, rigging, and character animation.' },
+                { name: 'Blender', icon: 'M10 6H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2H14z', color: 'text-orange-500', description: '3D modeling, sculpting, animation, and realistic rendering.' }, 
+                { name: 'Adobe Photoshop', icon: 'M14 6H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2H14zM16 4h4a2 2 0 012 2v2H14V6zm-8 0v2H4V6a2 2 0 012-2h2z', color: 'text-blue-500', description: 'Image manipulation, matte painting, and texture creation.' }, 
+            ];
+
+            const skillsContainer = document.getElementById('skills-container');
+
+            skillsData.forEach((skill, index) => {
+                const skillItem = document.createElement('div');
+                skillItem.className = 'bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1 fade-in';
+                skillItem.style.transitionDelay = `${index * 100}ms`;
+                skillItem.id = `skill-${index}`;
+
+                skillItem.innerHTML = `
+                    <div class="flex items-start mb-3">
+                        <svg class="w-7 h-7 ${skill.color} mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${skill.icon}"></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-blue-400 text-xl">${skill.name}</h3>
+                            <p class="text-gray-400 text-sm mt-1">${skill.description}</p>
+                        </div>
+                    </div>
+                `;
+                skillsContainer.appendChild(skillItem);
+            });
+
+
+            // --- Projects data (updated order + descriptions + tool tags) ---
+            const projectsData = [
+            // FIX: Added a comma (,) after the first object and used a placeholder image URL.
+            { title: '1. MONITOR', img: 'monitor.png', tags: ['Blender'], description: 'A stylized monitor product shot demonstrating realistic materials, emissive screens and subtle post-processing — modeled and rendered in Blender.' }, 
+                { title: '2. CAR', vid : 'videos/car.mp4', tags: ['Blender'  ], description: 'Automotive study focusing on hard-surface modeling, PBR materials and realistic exterior lighting. Created and rendered with Blender.' },
+                { title: '3. BOAT', vid: 'videos/BOAT ANIMATION.mp4', tags: ['Blender'], description: 'Small boat scene with water interaction, texture detailing and environment lighting. Modeled, textured and rendered in Blender.' },
+                // Use a local image placed inside the "image" folder (relative to this HTML file).
+                // Example path: ./image/BURGER.jpg  — keep case exact on case-sensitive servers.
+                { title: '4. BURGER', img: 'BURGER MODEL.png', tags: ['Blender'], description: 'Food visual: photoreal burger composition showcasing shader work, hair/particle-based sesame seeds and studio lighting — made in Blender.' },
+                { title: '5. DOMINOS EFFECT', vid: 'videos/dominos.mp4  ', tags: ['Blender'], description: 'Physics-driven dominos chain reaction demonstrating rigid-body simulation and timing — simulated and rendered in Blender.' },
+                { title: '6. HOME', img: 'home(ANIMATION).png', tags: ['Blender'], description: 'Interior visualization showing material fidelity, lighting and composition for a realistic room render — produced in Blender.' },
+                { title: '7. OONJAL', vid: 'videos/OONJAL MODEL,ANIMATION.mp4', tags: ['Blender'], description: 'A traditional "oonjal" (swing) scene focusing on detailed modeling, cloth/rope work and atmospheric lighting in Blender.' },
+                { title: '8. FLAG', vid: 'videos/FLAG (MODEL ,ANIMATION).mp4', tags: ['Blender'], description: 'Flag simulation with cloth dynamics and wind animation, textured with realistic fabric maps — created in Blender.' },
+               ];
+
+            // render projects
+        // render projects (VIDEO + IMAGE SUPPORT)
+projectsData.forEach((proj, idx) => {
+    const card = document.createElement('div');
+    card.className = 'group bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-700 transition-all duration-300 transform hover:shadow-blue-500/30 hover:shadow-2xl';
+
+    card.innerHTML = `
+        <div class="relative overflow-hidden">
+            ${
+                proj.vid
+                ? `<video src="${proj.vid}" autoplay loop muted playsinline class="w-full h-48 object-cover"></video>`
+                : `<img src="${proj.img}" alt="${proj.title}" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">`
+            }
+            <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-10 transition-opacity duration-300"></div>
+        </div>
+
+        <div class="p-4 fade-in" style="transition-delay: ${idx * 60}ms;">
+            <h3 class="text-lg font-bold text-blue-400 mb-2">${proj.title}</h3>
+            <p class="text-gray-400 mb-3 text-sm leading-snug">${proj.description}</p>
+            <div class="flex flex-wrap gap-2 mb-3">
+                ${proj.tags.map(tag => `<span class="px-3 py-1 bg-blue-700/50 text-blue-200 text-xs rounded-full border border-blue-500/50">${tag}</span>`).join('')}
+            </div>
+            <a href="#" class="flex items-center text-gray-300 hover:text-blue-400 transition-colors text-sm font-medium">View Details</a>
+        </div>
+    `;
+
+    projectsGrid.appendChild(card);
+});
+
+
+            // --- Intersection Observer for Animations and Active Link ---
+            const observerOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -10% 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const el = entry.target;
+                    const section = el.closest('section');
+                    const id = section ? section.id : null;
+
+                    // If the observed element is a section, handle nav highlighting
+                    if (section && entry.isIntersecting && id) {
+                        const navLink = document.getElementById(`nav-${id}`);
+                        const mobileNavLink = document.querySelector(`#mobile-menu a[href="#${id}"]`);
+
+                        navLinks.forEach(link => {
+                            link.classList.remove('text-blue-400', 'font-bold', 'border-b-2', 'border-blue-400');
+                            link.classList.add('text-gray-300', 'hover:text-blue-400');
+                        });
+                        mobileNavLinks.forEach(link => {
+                            link.classList.remove('text-blue-400', 'bg-gray-700');
+                            link.classList.add('text-gray-300', 'hover:bg-gray-700');
+                        });
+
+                        if (navLink) {
+                            navLink.classList.add('text-blue-400', 'font-bold', 'border-b-2', 'border-blue-400');
+                            navLink.classList.remove('text-gray-300', 'hover:text-blue-400');
+                        }
+                        if (mobileNavLink) {
+                            mobileNavLink.classList.add('text-blue-400', 'bg-gray-700');
+                            mobileNavLink.classList.remove('text-gray-300', 'hover:bg-gray-700');
+                        }
+                    }
+
+                    // For any element with .fade-in, toggle is-visible to animate it in
+                    if (entry.target.classList && entry.target.classList.contains('fade-in')) {
+                        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                        // Don't remove is-visible when it leaves (so elements stay visible)
+                    }
+                });
+
+            }, observerOptions);
+
+            // Observe all sections for nav highlighting
+            sections.forEach(section => observer.observe(section));
+
+            // Also observe every element with .fade-in so they animate when scrolled into view
+            const fadeItems = document.querySelectorAll('.fade-in');
+            fadeItems.forEach(item => observer.observe(item));
+
+            // Initial visibility for hero/home
+            document.getElementById('home').classList.add('is-visible');
+        });
+    </script>
+</body>
+</html>
